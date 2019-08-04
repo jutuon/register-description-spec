@@ -39,8 +39,8 @@ bit_fields = [
 ]
 
 [[register.general.enums]]
-name = "LED Color",
-bit = "1:0",
+name = "LED Color"
+bit = "1:0"
 values = [
     { value = 0, name = "Random" },
     { value = 1, name = "Red" },
@@ -104,6 +104,7 @@ Examples: `1:0`, `7:2`, `15:8`
 version = "0.1"
 name = "My device"
 default_register_size = "8"
+default_register_access = "rw"
 ```
 
 ### The `version` field
@@ -162,8 +163,8 @@ bit_fields = [
 ]
 
 [[register.general.enum]]
-name = "LED Color",
-bit = "1:0",
+name = "LED Color"
+bit = "1:0"
 values = [
     { value = 0, name = "Random" },
     { value = 1, name = "Red" },
