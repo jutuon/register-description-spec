@@ -266,12 +266,12 @@ Type: `Array of Inline Tables`
 
 ##### Requirements
 
-* No duplicate integer values.
+* No duplicate unsigned integer values.
 * Enum value must not overflow the enum bit field.
 
 ##### The `value` field
 
-Type: `Integer`
+Type: `UnsignedInteger`
 
 ##### The `name` field
 
