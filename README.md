@@ -135,6 +135,22 @@ Type: `RegisterAccess`
 When this field is set you can omit field `access` when specifying
 a register.
 
+### The `index_size` field (optional)
+
+Type: `RegisterSize`
+
+Provide additional information for the code generation about the
+register location index size. Default value of this field is `64`.
+
+### The `address_size` field (optional)
+
+Type: `RegisterSize`
+
+Provide additional information for the code generation about
+the register location address size. If this field is not set
+the code generation will default to the platform's default
+pointer size.
+
 ### The `extension` field (optional)
 
 Type: `String`
@@ -199,7 +215,9 @@ One register location field is required for the `[[register]]` section.
 
 Type: `UnsignedInteger`
 
-Specifying multiple register location fields is not supported.
+If register access mode is set to `rw` it is possible to specify
+a different location for register write operations with
+postfixing location field with `_w`, for example `absolute_address_w`.
 
 ### Register bit fields
 
